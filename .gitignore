@@ -1,9 +1,6 @@
 # Dependencies
 node_modules/
 
-# Build output (copied from node_modules)
-public/lib/
-
 # System files
 .DS_Store
 *.log
