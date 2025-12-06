@@ -1,0 +1,20 @@
+{
+  "name": "mp3-converter-wasm",
+  "version": "1.0.0",
+  "description": "MP4 to MP3 converter using ffmpeg.wasm",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "postinstall": "npm run build",
+    "dev": "npx serve public -p 3000 --cors",
+    "deploy": "npm run build && echo 'Ready to deploy! Upload the public/ folder to your hosting service.'"
+  },
+  "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.7",
+    "@ffmpeg/util": "^0.12.1",
+    "@ffmpeg/core": "^0.12.6"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
